@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATOS</title>
+</head>
+<header>
+    <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+    </nav>
+  </header>
+<body>
+    
+    <form id="formDeMensagem">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" required></textarea>
+        
+        <button type="submit">Enviar</button>
+       </form>
+       <div id="messageResponse" style="color: rgb(255, 195, 74);"></div>
+       
+
+
+    <style>
+        #formDeMensagem{
+            background-color: #ffd8a6;
+            justify-content: center;
+        }
+        
+        body {
+            background-color: rgb(248, 172, 85);
+        }
+          
+           
+           form {
+            width: 500px;
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+           }
+           
+           label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+           }
+           
+           input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+           }
+           
+           button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d67900;
+            color: white;
+            cursor: pointer;
+           }
+           nav {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 65px;
+            background: var(--azul-escuro);
+            width: 100vw;
+           top: 0;
+           left: 0;
+           background-color: rgb(255, 154, 59);
+        }
+        
+        
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            list-style: none;
+        
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            white-space: nowrap;
+            list-style: none;
+        
+        }
+        
+        
+        nav ul li a:hover {
+            color: var(--cor3);
+            transition: 0.5s;
+        }
+           
+           button:hover {
+            background-color: #925402;
+           }
+           
+           #messageResponse {
+            text-align: center;
+           }
+           
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

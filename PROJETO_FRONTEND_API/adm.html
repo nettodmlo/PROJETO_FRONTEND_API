@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADM</title>
+</head>
+<header>
+  <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+  </nav>
+</header>
+
+<body>
+  <table id="myTable">
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Mensagem</th>
+    </tr>
+   </table>
+
+   <style>
+    body {
+    background-color: rgb(248, 172, 85);
+}
+    nav {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 65px;
+      background: var(--azul-escuro);
+      width: 100vw;
+     top: 0;
+     left: 0;
+     background-color: rgb(255, 154, 59);
+  }
+  
+  
+  nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      list-style: none;
+  
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      white-space: nowrap;
+      list-style: none;
+  
+  }
+  
+  
+  nav ul li a:hover {
+      color: var(--cor3);
+      transition: 0.5s;
+  }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+     }
+     
+     th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+     }
+     th {
+      background-color: #b15000;
+      color: white;
+     }
+     
+     tr:nth-child(even) {
+      background-color: rgb(248, 172, 85);
+     }
+     th {
+      text-align: left;
+     }
+     a {
+      text-decoration: none;
+     }
+     
+     a:hover {
+      text-decoration: underline;
+     }
+
+   </style>
+   <script src="script.js"></script>
+</body>
+</html>
